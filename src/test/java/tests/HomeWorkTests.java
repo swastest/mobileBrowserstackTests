@@ -2,12 +2,15 @@ package tests;
 import com.codeborne.selenide.Condition;
 import io.appium.java_client.AppiumBy;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.back;
 
+
+@Tag("android")
 public class HomeWorkTests extends TestBase {
     @DisplayName("Проверка заголовка статьи, что он соответствует запросу поиска")
     @Test
