@@ -19,7 +19,8 @@ import static org.apache.commons.io.FileUtils.copyInputStreamToFile;
 
 // тут обязательно наследуемся
 public class LocalMobileDriver implements WebDriverProvider {
-    static LocalMobileInterface config = ConfigFactory.create(LocalMobileInterface.class);
+    static LocalMobileInterface config = ConfigFactory.create(LocalMobileInterface.class,
+            System.getProperties());
 
     public static URL getAppiumServerUrl() {
         try {
