@@ -9,6 +9,7 @@ import tests.TestBase;
 
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.back;
+
 @Tag("android")
 public class HomeWorkTest2 extends TestBase {
     @DisplayName("======Проверка заголовка статьи, что он соответствует запросу поиска")
